@@ -5,10 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
         <title>DonutMasterclass</title>
+
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500;600&display=swap" rel="stylesheet">
+        
         <!--Modern-normalize-->
         <link
 			rel="stylesheet"
@@ -19,6 +21,12 @@
 		/>
         <!--Custom styles-->
         <link rel="stylesheet" href="./css/styles.css" />
+        
+        <!-- SLICK -->
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     </head>
 
     <body>
@@ -304,23 +312,70 @@
                         </div>
                     </div>
             </section>
+            <!-- Section 'Reviews' -->
             <section id="reviews">
-                <div class="container">
-                    <h2>Reviews</h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <p>Last time I have visited a cooking course by Eva 
-                        I was impressed with the way she explained everything
-                        to people. You can be sure you will manage to cook a 
-                        delicious dish even if it is your first time in the kitchen!
-                        Thank you so much for the masterclass! Looking forward to the 
-                        next one and highly recommend it to everyone!
-                    </p>
+                <div class="container reviews">
+                    <h2 class="reviews-title">Reviews</h2>
+                    <ul class="reviews-list list">
+                        <li class="reviews-item">
+                            <img class="reviews-img" 
+                             srcset="
+                             ./images/reviews/will@1x.png 1x,
+                             ./images/reviews/will@2x.png 2x
+                             "
+                             src="./images/reviews/will@1x.png"
+                             alt="Will"
+                            />
+                            <p class="reviews-name">Will</p>
+                            <p class="reviews-text">Last time I have visited a cooking course by Eva 
+                                I was impressed with the way she explained everything
+                                to people. You can be sure you will manage to cook a 
+                                delicious dish even if it is your first time in the kitchen!
+                                Thank you so much for the masterclass! Looking forward to the 
+                                next one and highly recommend it to everyone!
+                            </p>
+                        </li>
+                        <li class="reviews-item">
+                            <img class="reviews-img" 
+                             srcset="
+                             ./images/reviews/john@1x.png 1x,
+                             ./images/reviews/john@2x.png 2x
+                             "
+                             src="./images/reviews/will@1x.png"
+                             alt="John"
+                            />
+                            <p class="reviews-name">John</p>
+                            <p class="reviews-text">I liked everything very much! Thank you so much for 
+                                the master class! I'm looking forward to the next one and highly 
+                                recommend it to everyone!
+                            </p>
+                        </li>
+                        <li class="reviews-item">
+                            <img class="reviews-img" 
+                             srcset="
+                             ./images/reviews/elis@1x.png 1x,
+                             ./images/reviews/elis@2x.png 2x
+                             "
+                             src="./images/reviews/elis@1x.png"
+                             alt="Elisabeth"
+                            />
+                            <p class="reviews-name">Elisabeth</p>
+                            <p class="reviews-text">You can be sure that you will be able to cook
+                                a delicious dish, even if this is your first time in the kitchen! 
+                                All liked it! Thank you so much for the master class! I'm looking 
+                                forward to the next one and highly recommend it to everyone!
+                            </p>
+                        </li>
+                    </ul>     
+                </div>
+                <div class="slick-dots">
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                    <!-- Додайте стільки крапок, скільки слайдів у вашому каруселі -->
                 </div>
             </section>
+
             <section id="registration">
                 <div class="container">
                     <h2>Registration</h2>
@@ -356,5 +411,30 @@
                 <p>New York</p>
             </div>
         </footer>
+
+        <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./button.js"></script>
+        <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+        </script>
+  
+        <script src="./slick.js"></script>
+        <script type="text/javascript">
+            $('.mobile-menu__link').click(function () {
+              $('.modal-mobile-menu.is-open').removeClass('is-open');
+              $('.overlay.is-open').removeClass('is-open');
+            });
+          </script>
+          <script type="text/javascript">
+            $('#cls-mdl-mn').click(function () {
+              $('.modal-mobile-menu.is-open').removeClass('is-open');
+            });
+          </script>
     </body>
 </html>
