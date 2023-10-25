@@ -805,10 +805,6 @@
    }
 
    /* Section 'Reviews' */
-   .reviews {
-
-   }
-
    .reviews-title {
     display: flex;
     justify-content: center;
@@ -824,14 +820,6 @@
       margin-top: 100px;
       margin-bottom: 28px;
     }
-   }
-
-   .reviews-list {
-
-   }
-
-   .reviews-item {
-
    }
 
    .reviews-img {
@@ -880,6 +868,240 @@
     background-color: var(--main-bg-cl);
     border-radius: 50%;
   }
+
+  /* Section 'Registration' */
+  .registration-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    @media screen and (max-width: 480px) {
+      margin-top: 48px;
+      margin-bottom: 27px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      margin-top: 80px;
+      margin-bottom: 27px;
+    }
+    @media screen and (min-width: 769px) {
+      margin-top: 100px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .registration {
+    display: flex;
+    border-radius: 10px;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+      width: 280px;
+      height: 394px;
+      background-image: linear-gradient(to right, rgba(61, 44, 44, 0.5), rgba(61, 44, 44, 0.5)), url(../images/registration/bg-s-@1x.jpg);
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: linear-gradient(to right, rgba(61, 44, 44, 0.5), rgba(61, 44, 44, 0.5)), url(../images/registration/bg-s-@2x.jpg);
+          background-size: 100% auto;
+          }
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      width: 690px;
+      height: 246px;
+      background-image: url(../images/registration/bg-m-@1x.jpg);
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/registration/bg-m-@2x.jpg);
+          background-size: 100% auto;
+          }
+    }
+    @media screen and (min-width: 769px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 950px;
+      height: 246px;
+      background-image: url(../images/registration/bg-l-@1x.jpg);
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/registration/bg-l-@2x.jpg);
+          background-size: 100% auto;
+          }
+    }
+  }
+  
+  .registration-text {
+    display: flex;
+    font-family: var(--main-font);
+    font-weight: 500;
+    line-height: normal;
+    font-size: 18px;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      color: var(--accent-txt-cl);
+      width: 114px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      flex-direction: row;
+      color: #000;
+      width: 140px;
+      margin-right: 20px;
+      text-align: right;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (min-width: 769px) {
+      flex-direction: row;
+      color: var(--main-txt-cl);
+      font-size: 20px;
+      width: 170px;
+      margin-right: 28px;
+      text-align: right;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .registration-text::after {
+        content: '';
+        margin-top: 20px;
+        transform: translate(-29%, -50%);
+        height: 2px;
+        width: 264px;
+        background-color: var(--accent-txt-cl);
+        border-radius: 2px;
+        border: transparent;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .registration-text::after {
+      content: '';
+      margin-left: 30px;
+      margin-right: 10px;
+      transform: translate(-50%, 10%);
+      height: 154px;
+      width: 2px;
+      background-color: #000;
+      border-radius: 2px;
+      border: transparent;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .registration-text::after {
+      content: '';
+      margin-left: 30px;
+      margin-right: 10px;
+      transform: translate(-50%, 10%);
+      height: 154px;
+      width: 2px;
+      background-color: #000;
+      border-radius: 2px;
+      border: transparent;
+    }
+  }
+
+  .registration-form-title {
+    font-family: var(--main-font);
+    line-height: normal;
+    font-weight: 400;
+    font-size: 16px;
+    @media screen and (max-width: 480px) {
+      color: var(--accent-txt-cl);
+      text-align: center; 
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      color: #000;
+      text-align: start;
+      margin-bottom: 16px;
+      width: 283px;
+    }
+    @media screen and (min-width: 769px) {
+      color: var(--main-txt-cl);
+      font-weight: 500;
+      font-size: 20px;
+      text-align: start;
+      margin-bottom: 24px;
+      width: 267px;
+    }
+  }
+
+  .registration-box {
+    display: flex;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      flex-direction: column;
+      margin-right: 36px;
+    }
+    @media screen and (min-width: 769px) {
+      flex-direction: column;
+    }  
+  }
+
+  .registration-input {
+    display: flex;
+    border: none;
+    @media screen and (max-width: 480px) {
+      color: var(--accent-txt-cl);
+      width: 265px;
+      background: linear-gradient(to bottom, transparent 94%, #ffffff 6%);
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      color: #000;
+      width: 237px;
+      background: linear-gradient(to bottom, transparent 94%, #000 6%);
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 769px) {
+      color: var(--main-txt-cl);
+      width: 212px;
+      background: linear-gradient(to bottom, transparent 94%, #000 6%);
+      margin-bottom: 16px;
+    }
+  }
+
+  .registration-input::placeholder {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media screen and (max-width: 480px) {
+    .registration-input::placeholder {
+      color: var(--accent-txt-cl); 
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .registration-input::placeholder {
+      color: rgba(0, 0, 0, 0.50);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .registration-input::placeholder {
+      color: #2E2520;
+    }
+  }
+
+ 
   
 
 
