@@ -144,7 +144,7 @@
       height: 345px;
       padding-top: 24px;
       padding-bottom: 43px;
-      margin-bottom: 36px;
+      /* margin-bottom: 36px; */
     }
     @media screen and (min-width: 769px) {
       background-image: url(../images/header.jpg);
@@ -152,7 +152,7 @@
       height: 556px;
       padding-top: 20px;
       padding-bottom: 20px;
-      margin-bottom: 64px;
+      /* margin-bottom: 64px; */
     }
 
     /* background-image: url(../images/header.jpg);
@@ -320,15 +320,20 @@
   .about {
     display: flex;  
     flex-direction: column;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       justify-content: center;
       align-items: center;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       flex-direction: row;
+      padding-top: 36px;
+      /* padding-bottom: 36px; */
     }
     @media screen and (min-width: 769px) {
       flex-direction: row;
+      padding-top: 64px;
+      /* padding-bottom: 64px; */
     }
   }
 
@@ -391,7 +396,7 @@
     display: flex;
     font-family: var(--main-font);
     color: var(--main-txt-cl);
-    background-color: #ffffff;
+    background-color: #E5E2E3;
     font-weight: 500;
     line-height: normal;
     cursor: pointer;
@@ -413,17 +418,20 @@
   /* Section 'Program' */
   .program {
     display: flex;
+    /* background-image: url(../images/bg.png);
+    background-repeat: repeat; */
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       flex-direction: column;
-      margin-top: 28px;
+      padding-top: 28px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       flex-direction: row;
-      margin-top: 81px;
+      padding-top: 81px;
     }
     @media screen and (min-width: 769px) {
      flex-direction: row;
-     margin-top: 100px;
+     padding-top: 100px;
     }
   }
 
@@ -505,7 +513,6 @@
     height: 24px;
     margin-right: 8px;
     background-image: url("../images/iко.png");
-    /* background-size: contain; */
   }
 
   .program-img-box {
@@ -565,22 +572,24 @@
    .speakers-title {
     display: flex;
     justify-content: center;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
-      margin-top: 36px;
-      margin-bottom: 12px;
+      padding-top: 36px;
+      padding-bottom: 12px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      margin-top: 44px;
-      margin-bottom: 20px;
+      padding-top: 44px;
+      padding-bottom: 20px;
     }
     @media screen and (min-width: 769px) {
-      margin-top: 100px;
-      margin-bottom: 10px;
+      padding-top: 100px;
+      padding-bottom: 10px;
     }
    }
 
    .speakers {
     display: grid;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
@@ -648,22 +657,24 @@
    .price-title {
     display: flex;
     justify-content: center;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
-      margin-top: 40px;
-      margin-bottom: 27px;
+      padding-top: 40px;
+      padding-bottom: 27px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      margin-top: 77px;
-      margin-bottom: 31px;
+      padding-top: 77px;
+      padding-bottom: 31px;
     }
     @media screen and (min-width: 769px) {
-      margin-top: 101px;
-      margin-bottom: 27px;
+      padding-top: 101px;
+      padding-bottom: 27px;
     }
    }
 
    .price {
     display: grid;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       grid-template-columns: repeat(1, 280px);
       grid-gap: 24px;
@@ -794,7 +805,6 @@
     margin-right: 6px;
     padding: 12px;
     background-image: url("../images/iко.png");
-    /* background-size: contain; */
   }
 
    .price-btn {
@@ -808,18 +818,24 @@
    .reviews-title {
     display: flex;
     justify-content: center;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
-      margin-top: 40px;
-      margin-bottom: 22px;
+      padding-top: 40px;
+      padding-bottom: 22px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      margin-top: 80px;
-      margin-bottom: 28px;
+      padding-top: 80px;
+      padding-bottom: 28px;
     }
     @media screen and (min-width: 769px) {
-      margin-top: 100px;
-      margin-bottom: 28px;
+      padding-top: 100px;
+      padding-bottom: 28px;
     }
+   }
+
+   .reviews {
+    background-color: #E5E2E3;
+    padding-bottom: 10px;
    }
 
    .reviews-img {
@@ -870,27 +886,33 @@
   }
 
   /* Section 'Registration' */
+  .registration-section {
+    background-color: #E5E2E3;
+  }
+
   .registration-title {
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
-      margin-top: 48px;
-      margin-bottom: 27px;
+      padding-top: 48px;
+      padding-bottom: 27px;
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
-      margin-top: 80px;
-      margin-bottom: 27px;
+      padding-top: 80px;
+      padding-bottom: 27px;
     }
     @media screen and (min-width: 769px) {
-      margin-top: 100px;
-      margin-bottom: 28px;
+      padding-top: 100px;
+      padding-bottom: 28px;
     }
   }
 
   .registration {
     display: flex;
     border-radius: 10px;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       flex-direction: column;
       align-items: center;
@@ -1107,6 +1129,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #E5E2E3;
   }
 
   .contacts-title {
@@ -1184,6 +1207,7 @@
   .footer {
     display: flex;
     flex-direction: column;
+    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       background-image: url(../images/footer-s-@1x.png);
       background-size: 15% auto;
