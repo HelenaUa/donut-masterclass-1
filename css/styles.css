@@ -1184,7 +1184,6 @@
   .footer {
     display: flex;
     flex-direction: column;
-    /* height: 100px; */
     @media screen and (max-width: 480px) {
       background-image: url(../images/footer-s-@1x.png);
       background-size: 15% auto;
@@ -1216,13 +1215,31 @@
     margin-bottom: 60px;
   }
 
-  .footer-text {
+  .footer-text, 
+  .footer-number {
     font-family: var(--main-font);
     color: #2E2520;
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
   }
+
+  .footer-svg {
+    fill: #2E2520;
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      display: none;
+    }
+    @media screen and (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  .footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
   
 
