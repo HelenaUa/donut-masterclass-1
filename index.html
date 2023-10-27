@@ -45,7 +45,7 @@
                         </ul>
                     </nav>
                     <div>
-                        <button class="header-menu" type="button">
+                        <button class="header-menu js-modal-open" type="button">
                             <svg width="30px" height="16px">
                                 <use href="./images/icons.svg#icon-menu"></use>
                             </svg>
@@ -98,7 +98,7 @@
                            baked for many celebrities. Eva and our shop have received multiple awards 
                            & recognition for excellence.
                         </p>
-                        <p class="about-text">We are going to teach you how to cook with passion and 
+                        <p class="about-text hidden">We are going to teach you how to cook with passion and 
                            sparkles in your eyes! We love what we do and believe you will enjoy 
                            our cooking atmosphere!
                         </p>
@@ -123,7 +123,7 @@
                             <li class="program-item">Secret receipt of cooking from Eva</li>
                             <li class="program-item">All products are included in the price</li>
                         </ul>
-                        <p class="program-text">Come with your dear people and friends and you will spend an unforgettable time and 
+                        <p class="program-text hidden">Come with your dear people and friends and you will spend an unforgettable time and 
                            will become a real professional in donuts cooking!
                         </p>
                         <button class="read-more-btn" type="button">Read more</button>
@@ -375,7 +375,7 @@
                 </div>
             </section>
              <!-- Section 'Registration' -->
-            <section class="registration-section" id="registration">
+            <section id="registration">
                 <h2 class="registration-title">Registration</h2>
                 <div class="container registration">
                     <p class="registration-text">May 23, 11:00 New York</p>
@@ -406,34 +406,59 @@
 
         <!-- Footer -->
         <footer>
-            <div class="container footer">
-                <ul class="icons list header-icons footer-icons">
-                    <li class="icons-item">
-                        <svg width="16px" height="16px"><use href="./images/icons.svg#icon-twitter"></use></svg>
-                    </li>
-                    <li class="icons-item">
-                        <svg width="16px" height="16px"><use href="./images/icons.svg#icon-instagram"></use></svg>
-                    </li>
-                    <li class="icons-item">
-                        <svg width="16px" height="16px"><use href="./images/icons.svg#icon-facebook"></use></svg>
-                    </li>
-                </ul>
-                <div class="footer-box">
-                    <div>
-                        <svg class="footer-svg" width="13px" height="13px">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                        <a class="footer-number link" href="tel:(910)222-8855">(910)222-8855</a>
-                    </div>
-                    <div class="footer-icon">
-                        <svg class="footer-svg" width="13px" height="13px">
-                            <use href="./images/icons.svg#icon-location"></use>
-                        </svg>
-                        <p class="footer-text">New York</p>
+            <section>
+                <div class="container footer">
+                    <ul class="icons list header-icons footer-icons">
+                        <li class="icons-item">
+                            <svg width="16px" height="16px"><use href="./images/icons.svg#icon-twitter"></use></svg>
+                        </li>
+                        <li class="icons-item">
+                            <svg width="16px" height="16px"><use href="./images/icons.svg#icon-instagram"></use></svg>
+                        </li>
+                        <li class="icons-item">
+                            <svg width="16px" height="16px"><use href="./images/icons.svg#icon-facebook"></use></svg>
+                        </li>
+                    </ul>
+                    <div class="footer-box">
+                        <div>
+                            <svg class="footer-svg" width="13px" height="13px">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                            <a class="footer-number link" href="tel:(910)222-8855">(910)222-8855</a>
+                        </div>
+                        <div class="footer-icon">
+                            <svg class="footer-svg" width="13px" height="13px">
+                                <use href="./images/icons.svg#icon-location"></use>
+                            </svg>
+                            <p class="footer-text">New York</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>          
         </footer>
+
+          <!-- modal overlay -->
+          <div class="overlay js-modal-overlay"></div>
+          <!--Mobile menu-->
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <svg class="logo" width="106px" height="46px"><use href="./images/icons.svg#icon-logo"></use></svg>
+            <button class="menu-toggle js-close-menu">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list list">
+                    <li class="nav-item"><a class="link" href="#about">About us</a></li>
+                    <li class="nav-item"><a class="link" href="#program">Program</a></li>
+                    <li class="nav-item"><a class="link" href="#speakers">Speakers</a></li>
+                    <li class="nav-item"><a class="link" href="#price">Price</a></li>
+                    <li class="nav-item"><a class="link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="link" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+          </div>
+
 
         <script
         type="text/javascript"

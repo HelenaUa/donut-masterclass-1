@@ -24,6 +24,10 @@
     color: var(--main-txt-cl);
   }
 
+  section {
+    background-color: #E5E2E3;
+  }
+
   .button {
     cursor: pointer;
     display: flex;
@@ -124,6 +128,15 @@
   .icons-item:hover {
     fill: var(--main-bg-cl);
     cursor: pointer;
+  }
+
+  .hidden {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      display: none;
+    }
   }
 
   /*Header*/
@@ -320,7 +333,6 @@
   .about {
     display: flex;  
     flex-direction: column;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       justify-content: center;
       align-items: center;
@@ -418,9 +430,6 @@
   /* Section 'Program' */
   .program {
     display: flex;
-    /* background-image: url(../images/bg.png);
-    background-repeat: repeat; */
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       flex-direction: column;
       padding-top: 28px;
@@ -572,7 +581,6 @@
    .speakers-title {
     display: flex;
     justify-content: center;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       padding-top: 36px;
       padding-bottom: 12px;
@@ -589,7 +597,6 @@
 
    .speakers {
     display: grid;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 20px;
@@ -657,7 +664,6 @@
    .price-title {
     display: flex;
     justify-content: center;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       padding-top: 40px;
       padding-bottom: 27px;
@@ -674,7 +680,6 @@
 
    .price {
     display: grid;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       grid-template-columns: repeat(1, 280px);
       grid-gap: 24px;
@@ -818,7 +823,6 @@
    .reviews-title {
     display: flex;
     justify-content: center;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       padding-top: 40px;
       padding-bottom: 22px;
@@ -834,7 +838,6 @@
    }
 
    .reviews {
-    background-color: #E5E2E3;
     padding-bottom: 10px;
    }
 
@@ -886,15 +889,10 @@
   }
 
   /* Section 'Registration' */
-  .registration-section {
-    background-color: #E5E2E3;
-  }
-
   .registration-title {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       padding-top: 48px;
       padding-bottom: 27px;
@@ -912,7 +910,6 @@
   .registration {
     display: flex;
     border-radius: 10px;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       flex-direction: column;
       align-items: center;
@@ -1129,7 +1126,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E5E2E3;
   }
 
   .contacts-title {
@@ -1207,7 +1203,6 @@
   .footer {
     display: flex;
     flex-direction: column;
-    background-color: #E5E2E3;
     @media screen and (max-width: 480px) {
       background-image: url(../images/footer-s-@1x.png);
       background-size: 15% auto;
