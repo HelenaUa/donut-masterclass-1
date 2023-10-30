@@ -46,7 +46,7 @@
                         </ul>
                     </nav>
                     <div>
-                        <button class="header-menu js-modal-open" type="button">
+                        <button class="header-menu js-menu-open" type="button" aria-expanded="false" aria-controls="mobile-menu">
                             <svg width="30px" height="16px">
                                 <use href="./images/icons.svg#icon-menu"></use>
                             </svg>
@@ -441,10 +441,10 @@
         </footer>
 
         <!--Modal menu-->
-        <div class="modal-menu js-modal" data-modal="modal-menu">
+        <div class="modal-menu js-menu" data-modal="modal-menu">
             <div class="modal-up">
                 <svg class="modal-logo logo" width="108px" height="50px"><use href="./images/icons.svg#icon-logo"></use></svg>
-                <button class="modal-close js-modal-close">
+                <button class="modal-close js-menu-close">
                     <svg width="32" height="32">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -459,6 +459,17 @@
                 <li class="modal-item"><a class="modal-menu-link link" href="#contacts">Contacts</a></li>
             </ul>    
         </div>
+
+
+        <!--Script modal-menu-->
+        <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous">
+        </script>
+        <script defer src="./modal-menu.js"></script>
+        <!--------------------->
 
 
         <script
